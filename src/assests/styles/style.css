@@ -1,0 +1,27 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --black: #000000;
+    --textGray: rgba(0, 0, 0, 0.6);
+    --backgroundGray:rgba(242, 240, 241, 1);
+}
+
+body {
+    font-family: "Integral CF", sans-serif !important;
+}
+.my_section{
+    height: 100vh;
+    margin-bottom: 50px !important;
+}
+
+.col a{
+    text-decoration: none !important;
+}
