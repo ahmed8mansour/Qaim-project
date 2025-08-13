@@ -1,28 +1,37 @@
+import NavBar from "@/components/NavBar";
+import Image from "next/image";
+import MySwiperComponent from "@/components/Home/imagesLogic";
 export default function Home() {
-  return (
-    <h1>
-              <div>
-                <div className="container">
-      <h1 className="text-center my-4">Hello, Bootstrap!</h1>
-      <button className="btn btn-primary">Click Me</button>
-    </div>
-          <i className="fas fa-coffee fa-3x"></i>
-      <i className="fas fa-coffee fa-3x"></i>
-      <i className="fas fa-coffee fa-3x"></i>
 
+
+  return (
+    <div className="home_page_container">
+      <NavBar />
+      <div className="home_content container">
+        <div className="row gap-lg-0 gap-3">
+          <div className="col-12 col-lg-6">
+            <div className="home_content_left d-flex row-gap-3 flex-column justify-content-center align-items-end h-100 ">
+                <h1 className="home_title">  QAIM - منصة قيم </h1>
+                <h2 className="home_title_prev">اكبر منصة بالشرق الاوسط لحلول إدارة الاملاك العقاري</h2>
+                <p className="home_title_para"> 
+                  تقنيات_عقارية تمكن المكاتب والشركات العقارية  
+                  من اتمة عمليات الشراء للوحدات والمرافق العقارية .
+                  تتوافق وترتبط بالخدمات الحكومية ومزودة
+                  بأنظمة محاسبية ألية.
+                  
+                  </p>
+                <button className="gold_button btn" type="button">
+                  سجل الأن <i className="fa-solid fa-angle-right"></i> 
+                </button>
+            </div>
+
+          </div>
+          <div className="col-12 col-lg-6">
+
+<MySwiperComponent/>
+          </div>
         </div>
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu dropdown-menu-dark">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"/></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
-      </h1>
+      </div>
+    </div>
   );
 }

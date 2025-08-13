@@ -4,7 +4,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 // Importing Bootstrap CSS + JS
 import BootstrapClient from "@/utils/BootstrapImporting";
 
-
 import { Tajawal } from "next/font/google";
 
 const tajawal = Tajawal({
@@ -24,7 +23,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${tajawal.className}`}>
         <BootstrapClient/>
+
+
         {children}
+
       </body>
     </html>
   );
