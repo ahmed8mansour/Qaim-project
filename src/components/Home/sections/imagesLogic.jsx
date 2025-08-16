@@ -1,9 +1,6 @@
 "use client";
 import React from 'react';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-
+import "@/assests/styles/heroEmblaSlider.css"
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
@@ -13,7 +10,7 @@ function MySwiperComponent() {
     const { width } = useWindowSize();
     const OPTIONS = { loop: true }
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 1500  , stopOnMouseEnter:true,  stopOnInteraction :false })])
-
+    
     return (
         <>
 {

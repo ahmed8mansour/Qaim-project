@@ -1,0 +1,33 @@
+@media (max-width:575.98px ) {
+    /* .home_content_right{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    .home_content .embla__container *{
+        height: 280px !important;
+    }
+}
+
+.home_content .embla {
+    width: 100%; /* يغطي كامل المساحة */
+    overflow: hidden;
+}
+
+.home_content .embla__viewport {
+    overflow: hidden;
+}
+
+.home_content .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: 0; /* نشيل المسافة السالبة */
+
+}
+
+.home_content .embla__slide {
+    flex: 0 0 calc(100% - 40px); /* كل شريحة تغطي 100% من العرض */
+    min-width: 0;
+    margin: 20px !important;
+}

@@ -4,14 +4,14 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 // Importing Bootstrap CSS + JS
 import BootstrapClient from "@/utils/BootstrapImporting";
 
-import { Tajawal } from "next/font/google";
+import { Tajawal , Mr_Dafoe } from "next/font/google";
 
 const tajawal = Tajawal({
   weight: ["200", "400", "700"],
   subsets: ["arabic"],
 });
 
-
+const mrDafoe = Mr_Dafoe({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Create Next App",
@@ -21,9 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${tajawal.className}`}>
+      <body className={`${tajawal.className} ${mrDafoe.className}`}>
         <BootstrapClient/>
-
 
         {children}
 
