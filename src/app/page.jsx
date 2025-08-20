@@ -2,6 +2,8 @@ import NavBar from "@/components/NavBar";
 import AboutUs from "@/components/Home/AboutUs";
 import Hero from "@/components/Home/Hero";
 import OurPartners from "@/components/Home/OurPartners";
+import ContactUS from "@/components/Home/ContactUS";
+import Footer from "@/components/Home/Footer";
 export default function Home() {
 
 
@@ -14,7 +16,8 @@ export default function Home() {
 
       <AboutUs/>
       <OurPartners/>
-
+      <ContactUS/>
+      <Footer/>
     </div>
   );
 }

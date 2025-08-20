@@ -13,6 +13,7 @@ html {
     --color1: #D1E8E2;
     --color2: #8B94C6;
     --background:rgba(209, 232, 226, 0.3);
+    --background2:rgba(241, 248, 246, 1)
 }
 
 .main_font{
@@ -779,6 +780,7 @@ html {
 .partners_section{
     background-color: var(--background);
     padding-top: 100px !important;
+    padding-bottom: 100px !important;
 }
 
 .partners_section .partner_title{
@@ -809,4 +811,174 @@ html {
 .partners_section .partner_bottom{
     margin-top: 70px;
 
+}
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* contact section */
+.contact_section{
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 70%,
+        var(--background2) 70%,
+        var(--background2) 100%
+    );
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    box-shadow: 0px 141px 200px -178px rgba(25, 58, 75, 0.15);
+}
+
+
+@media (max-width: 991.98px) {
+    .contact_section{
+        background: none !important;
+    background-color: var(--background2) !important;
+    }
+    
+}
+
+.contact_section .contact_left .contact_title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(24px, 4vw + 1rem, 54px);
+    line-height: 65px;
+}
+.contact_section .contact_left .contact_title span{
+    color: var(--mainColor);
+}
+.contact_section .contact_left .contact_pretitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.contact_section .contact_left button{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.contact_section .contact_left input ,.contact_section .contact_left textarea{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.contact_section .contact_left input:focus ,.contact_section .contact_left textarea:focus{
+    border-color: var(--mainColor) !important;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 700px; /* أو أي قيمة بدك ياها */
+}
+
+.contact_left_bottom .contact_label{
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 20px;
+color: var(--mainColor);
+}
+
+.contact_left_bottom .contact_value{
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+color: black;
+}
+
+
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* footer section */
+
+.footer_section{
+    background-color: var(--background);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.footer_content{
+    position: relative;
+    height: 427px;
+    background: linear-gradient(180deg, rgba(209, 232, 226, 0) 0%, #CEAA87 99.48%);
+    border-radius: 20px;
+    overflow: visible;
+}
+@media (min-width:991.98px) {
+    .footer_content::before{
+        content: "";
+        position: absolute;
+        inset: -100px;
+        background-image: url("../images_css/footer_bg.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        z-index: 2;
+    }
+}
+@media (max-width:1200px) and (min-width:992px) {
+    .footer_content::before {
+        background-position: 12px 34px;
+            background-size: 38%;    
+    }
+}
+
+@media (max-width:768px) {
+    .footer_section {
+        background: linear-gradient(180deg, rgba(209, 232, 226, 0) 0%, #CEAA87 99.48%);
+    }
+    .footer_content {
+        background:none !important;
+    }
+}
+.footer_content .footer_title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(19px, 2vw + 4px, 36px);
+    line-height: 20px;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.footer_content .footer_title span{
+    color: var(--mainColor);
+}
+
+.footer_content .footer_text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(19px, 2vw + 4px, 36px);
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.footer_content i{
+    color:rgb(247, 181, 0);
+    font-size: 35px;
+    margin: 0 5px;
+}
+
+@media (max-width:768px) {
+    .footer_content i{
+        font-size: 30px;
+    }
+    .footer_content .footer_images img {
+        width: 150px !important;
+        height: 47px !important;
+    }
+}
+@media (max-width:1200px) {
+    .footer_content .footer_images img{
+        width: 160px;
+        height: 50px;
+    }
 }
