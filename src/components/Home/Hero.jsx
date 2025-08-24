@@ -1,4 +1,4 @@
-import MySwiperComponent from "@/components/Home/sections/imagesLogic";
+import MySwiperComponent from "@/components/Home/Component inside sections/imagesLogic";
 export default function Hero() {
   return (
           <div className="home_content container">

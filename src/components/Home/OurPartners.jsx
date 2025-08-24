@@ -1,4 +1,4 @@
-import PartnerImagesLogic from "./sections/PartnerImagesLogic"
+import PartnerImagesLogic from "./Component inside sections/PartnerImagesLogic"
 export default function OurPartners() {
   return (
     <div className="partners_section">
