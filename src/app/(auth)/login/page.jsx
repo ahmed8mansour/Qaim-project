@@ -1,19 +1,13 @@
-import AuthLayout from "@/components/auth/authLayout"
-import TextInput from "@/components/Common Components/TextInput";
+import TextInput from "@/components/ui/TextInput";
 import Form from "next/form";
 import Image from "next/image";
 import { Mail } from "lucide-react"
-import PasswordInput from "@/components/Common Components/PasswordInput";
-import LoginButton from "@/components/Common Components/LoginButton";
+import PasswordInput from "@/components/ui/PasswordInput";
+import LoginButton from "@/components/ui/LoginButton";
 
 import Link from "next/link";
 export default function Login() {
   return (
-    <AuthLayout
-    title= "ليس لديك حساب!"
-    pretitle="يمكنك تسجيل بياناتك وانشاء حساب الأن"
-    buttonText="تسجــيــل"
-    >
 
         <div className="login_content h-100" dir="rtl">
           <div className="d-flex flex-column justify-content-between align-items-center">
@@ -32,6 +26,5 @@ export default function Login() {
             </Form>
           </div>
         </div>
-    </AuthLayout>
   )
 }

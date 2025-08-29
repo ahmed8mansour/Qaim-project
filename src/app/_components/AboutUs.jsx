@@ -1,4 +1,3 @@
-import { MessageSquareText } from "lucide-react"
 export default function AboutUs() {
     return (
         <div className="about_us_section my_section main_font">

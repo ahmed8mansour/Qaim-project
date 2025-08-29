@@ -1,4 +1,4 @@
-import "../assests/styles/style.css"
+import "../assets/styles/style.css"
 // Importing FontAwesome
 import '@fortawesome/fontawesome-free/css/all.min.css';
 // Importing Bootstrap CSS + JS

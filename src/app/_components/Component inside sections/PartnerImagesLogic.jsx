@@ -8,7 +8,7 @@ import {
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
-import "@/assests/styles/partnerEmblaSlider.css"
+import "@/assets/styles/partnerEmblaSlider.css"
 export default function PartnerImagesLogic() {
   
   const OPTIONS = {loop: true ,align :"start"}

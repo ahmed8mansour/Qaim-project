@@ -1,5 +1,4 @@
 import Image from "next/image"
-// import { Button } from "@mantine/core"
 export default function NavBar() {
 
     return(

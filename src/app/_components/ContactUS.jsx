@@ -1,7 +1,7 @@
 import Form from 'next/form';
 import Button from '@mui/material/Button';
 
-import ContactMap from './Component inside sections/ContactMap';
+import ContactMap from '@/app/_components/Component inside sections/ContactMap';
 export default function ContactUS() {
   return (
     <div className="contact_section">

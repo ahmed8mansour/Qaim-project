@@ -1,9 +1,9 @@
-import NavBar from "@/components/Home/Component inside sections/NavBar";
-import AboutUs from "@/components/Home/AboutUs";
-import Hero from "@/components/Home/Hero";
-import OurPartners from "@/components/Home/OurPartners";
-import ContactUS from "@/components/Home/ContactUS";
-import Footer from "@/components/Home/Footer";
+import NavBar from "@/app/_components/Component inside sections/NavBar";
+import AboutUs from "@/app/_components/AboutUs";
+import Hero from "@/app/_components/Hero";
+import OurPartners from "@/app/_components/OurPartners";
+import ContactUS from "@/app/_components/ContactUS";
+import Footer from "@/app/_components/Footer";
 export default function Home() {
 
 

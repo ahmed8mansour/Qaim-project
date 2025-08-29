@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import "@/assests/styles/heroEmblaSlider.css"
+import "@/assets/styles/heroEmblaSlider.css"
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 

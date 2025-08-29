@@ -1026,6 +1026,7 @@ color: black;
     right: 0;
     transform: translateY(-50%);
     padding-right: 30px;
+    padding-left: 20px;
 }
 
 .auth_left .auth_left_center .auth_title{
@@ -1057,7 +1058,7 @@ color: black;
     color: #FFFFFF;
 }
 
-.auth_content .login_right_col{
+.auth_content .auth_right_col{
     padding: 30px;
     padding-bottom: 0;
     background: var(--background);
@@ -1174,4 +1175,58 @@ color: black;
         width: 100% !important;
     }
 
+}
+
+
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* auth - register */
+
+.register_content .profile_icon{
+    width: 100px;
+    height: 100px;
+    background: var(--mainColor);
+    border-radius: 50%;
+}
+
+.register_content .register_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(24px, 4vw + 4px, 40px);
+    line-height: 60px;
+    color: var(--mainColor);
+}
+
+.profile_container {
+    width: 100% !important;
+}
+@media (min-width: 1400px) {
+    
+    .profile_container {
+        width: 75% !important;
+    }
+}
+.profile_container .profile_status_card{
+    height: 156px;
+    background: var(--background);
+    border: 2px solid var(--color1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.profile_container .profile_status_card .profile_status_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(22px, 2vw + 3px, 35px);
+    line-height: 42px;
+    color: var(--mainColor);
+}
+
+@media (max-width: 575.98px) {
+    .profile_container .profile_status_card img {
+        width: 100px !important;
+        height: 95px !important;
+    }
 }
