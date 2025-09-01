@@ -5,17 +5,17 @@ import { useToggle } from "react-use";
 export default function PasswordInput({placeholder , icon}) {
     const [showPassword , setShowPassword] = useToggle(false);
 return (
-    <div className='auth_input_parent '>
+    <div className='auth_input_parent mb-3'>
             <span className="auth_input_icon">
-                <LockIcon/>
+                <LockIcon />
             </span>
             <input
-                placeholder="كلمة المرور"
+                placeholder={placeholder}
                 type={showPassword ? "text" : "password"}
-                className='auth_text_input form-control mb-3'
+                className='auth_text_input form-control'
             />
             <span className="auth_input_eye" onClick={setShowPassword} >
-                {showPassword ? <EyeOff /> : <EyeIcon />}
+                {showPassword ? <EyeIcon color="black" /> : <EyeOff color="black"/>}
             </span>
     </div>   
 )

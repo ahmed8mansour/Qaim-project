@@ -5,6 +5,7 @@ export const metadata = {
 
 import Button from '@mui/material/Button';
 import BackButton from '@/components/ui/BackButton';
+import Link from 'next/link';
 
 export default async function RegisterTemplate({ children }) {
 
@@ -21,18 +22,20 @@ export default async function RegisterTemplate({ children }) {
                             <BackButton className="d-none d-lg-inline-flex" />
                             {/* <Button className='main_font auth_back_btn' startIcon={<i className="fa-solid fa-arrow-left"></i>} variant="contained" >عودة</Button> */}
                             </div>
-                            <div className="auth_left_center" dir='rtl'>
+                            <div className="auth_left_center me-2" dir='rtl'>
                                 <h1 className='auth_title mb-4 '> مرحباً بعودتك !</h1>
                                 <p className='auth_subtitle mb-4 '> لتبقي علي تواصل معنا من فضلك قم بالتسجيل الأن.</p>
-                                <Button className='main_font auth_center_btn'   sx={{
+                                <Link href={"/login"}>
+                                    <Button className='main_font auth_center_btn'   sx={{
                                         '& .MuiButton-startIcon': {
-                                            marginLeft: '10px', 
-                                        },
-                                    }} startIcon={<i className="fa-solid fa-arrow-right"></i>} variant="contained">
+                                                marginLeft: '10px', 
+                                            },
+                                        }} startIcon={<i className="fa-solid fa-arrow-right"></i>} variant="contained">
+                                        
+                                        تسجيل الدخول
                                     
-                                    تسجيل الدخول
-                                
-                                </Button>
+                                    </Button>
+                                </Link>
 
                             </div>
                         </div>

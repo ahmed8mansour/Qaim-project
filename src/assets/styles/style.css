@@ -1110,10 +1110,11 @@ color: black;
 .auth_input_parent .auth_input_icon{
     position: absolute;
     right: 22px;
-    top: 28%;
-    /* transform: translateY(-81%); */
+    top: 50%;
+    transform: translateY(-50%);
     color: #aaa;
     pointer-events: none;
+    font-size: 24px;
 
 }
 
@@ -1135,12 +1136,15 @@ color: black;
 .auth_input_parent .auth_input_eye{
     position: absolute;
     left: 25px;
-    top: 28%;
-    /* transform: translateY(-60%); */
+    top: 50%;
+    transform: translateY(-50%);
     color: #aaa;
     cursor: pointer;
 }
-
+.auth_input_parent svg {
+    width:  28px !important;
+    height: 28px !important;
+}
 .login_btn{
     width: 400px;
     height: 75px;
@@ -1152,6 +1156,7 @@ color: black;
     line-height: 24px !important;
     color: #FFFFFF;
 }
+
 .login_form .forget_password , .login_form .register_link {
     font-style: normal;
     font-weight: 500;
@@ -1164,14 +1169,14 @@ color: black;
     .login_form .auth_input_parent{
         width: 350px !important;
     }
-    .login_form button {
+    .login_btn {
         width: 350px !important;
     }
     
 }
 
 @media ( width <= 450px) {
-    .login_form button {
+    .login_btn{
         width: 100% !important;
     }
 
@@ -1184,14 +1189,14 @@ color: black;
 /* ================================================== */
 /* auth - register */
 
-.register_content .profile_icon{
+.profile_icon{
     width: 100px;
     height: 100px;
     background: var(--mainColor);
     border-radius: 50%;
 }
 
-.register_content .register_title {
+.register_title {
     font-style: normal;
     font-weight: 700;
     font-size: clamp(24px, 4vw + 4px, 40px);
@@ -1229,4 +1234,24 @@ color: black;
         width: 100px !important;
         height: 95px !important;
     }
+}
+
+.checkbox_label{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.add_file_btn {
+    height: 77px !important;
+    background: rgba(209, 232, 226, 0.5) !important;
+    border: 3px solid #D1E8E2 !important;
+    border-radius: 20px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #000000 !important;
 }

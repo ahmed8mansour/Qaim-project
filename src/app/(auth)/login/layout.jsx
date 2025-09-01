@@ -5,6 +5,7 @@ export const metadata = {
 
 import Button from '@mui/material/Button';
 import BackButton from '@/components/ui/BackButton';
+import Link from 'next/link';
 
 export default async function LoginTemplate({ children }) {
 
@@ -23,18 +24,20 @@ export default async function LoginTemplate({ children }) {
                             <BackButton className="d-none d-lg-inline-flex" />
                             {/* <Button className='main_font auth_back_btn' startIcon={<i className="fa-solid fa-arrow-left"></i>} variant="contained" >عودة</Button> */}
                             </div>
-                            <div className="auth_left_center" dir='rtl'>
+                            <div className="auth_left_center me-2" dir='rtl'>
                                 <h1 className='auth_title mb-4 '> ليس لديك حساب!</h1>
                                 <p className='auth_subtitle mb-4 '> يمكنك تسجيل بياناتك وانشاء حساب الأن </p>
-                                <Button className='main_font auth_center_btn'   sx={{
+                                <Link href={"/register"}>
+                                    <Button className='main_font auth_center_btn'   sx={{
                                         '& .MuiButton-startIcon': {
                                             marginLeft: '10px', 
                                         },
                                     }} startIcon={<i className="fa-solid fa-arrow-right"></i>} variant="contained">
-                                    
-                                    تسجــيــل
-                                
-                                </Button>
+
+                                        تسجــيــل
+
+                                    </Button>
+                                </Link>
 
                             </div>
                         </div>

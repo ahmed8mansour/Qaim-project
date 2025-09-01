@@ -1,19 +1,12 @@
 import { CircleUserRound } from "lucide-react";
 import Image from "next/image";
-
+import ProfileStatusCard from "../_components/ProfileStatusCard";
 // register/clients/individuals
 // register/clients/companies
 // register/inspectors
 // register/valuation-companies
 
-function ProfileStatusCard({src , title}){
-    return(
-        <div className="profile_status_card d-flex justify-content-between align-items-center w-100 p-3 py-sm-1 px-sm-5  mb-4" dir="ltr">
-            <Image src={src} alt="Profile Status svg" width={130} height={115} />
-            <h2 className="profile_status_title">{title}</h2>
-        </div>
-    )
-}
+
 export default function Register() {
     return (
 
@@ -26,8 +19,8 @@ export default function Register() {
                     <h1 className="register_title mt-3">قم بإختيار حالة حسابك !</h1>
                 </div>
                 <div className="profile_container  mt-5">
-                    <ProfileStatusCard src={"/images/clients.png"} title="عميل" />
-                    <ProfileStatusCard src={"/images/valuation-companies.png"} title="شركة" />
+                    <ProfileStatusCard src={"/images/clients.png"} title="عميل"   route="/register/clients/individuals"/>
+                    <ProfileStatusCard src={"/images/valuation-companies.png"} title="شركة"  route="/register/clients/companies"/>
                 </div>
             </div>
         </div>

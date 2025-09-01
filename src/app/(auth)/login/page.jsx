@@ -17,12 +17,12 @@ export default function Login() {
               <h2 className="login_subtitle mt-3">مرحباً بعودتك مجدداً</h2>
             </div>
             <Form className="mt-5 w-100 d-flex flex-column align-items-center login_form" >
-              <TextInput placeholder={"البريد الالكتروني"} icon={<Mail style={{fontSize:"18px"}}/>}/>
-              <PasswordInput />
-              <LoginButton />
+              <TextInput placeholder={"البريد الالكتروني"} icon={<Mail />} />
+              <PasswordInput placeholder={"كلمة المرور"}/>
+              <LoginButton  />
               <Link className="forget_password mt-4 text-decoration-none" href={""}>هل نسيت كلمة المرور ؟</Link>
               {/* more than 992 hide this element */}
-              <p className="register_link mt-4 d-lg-none d-block " >ليس لديك حساب؟ <Link href={""} className="text-decoration-none" style={{color:"var(--mainColor)"}}> أنشئ حساب جديد</Link></p>
+              <p className="register_link mt-4 d-lg-none d-block " >ليس لديك حساب؟ <Link href={"/register"} className="text-decoration-none" style={{color:"var(--mainColor)"}}> أنشئ حساب جديد</Link></p>
             </Form>
           </div>
         </div>
