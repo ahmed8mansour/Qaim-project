@@ -1,12 +1,17 @@
 "use client";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import dynamic from "next/dynamic";
 
-import { useEffect } from "react";
+const BootstrapScript = dynamic(
+  async () => {
+    if (typeof window !== "undefined") {
+      await import("bootstrap/dist/js/bootstrap.bundle.min.js");
+    }
+    return () => null;
+  },
+  { ssr: false }
+);
 
 export default function BootstrapClient() {
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
-
-  return null;
+  return <BootstrapScript />;
 }
