@@ -7,7 +7,6 @@ import {
 } from './PartnerImagesLogicArrowBtns'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
-
 import "@/assets/styles/partnerEmblaSlider.css"
 export default function PartnerImagesLogic() {
   
