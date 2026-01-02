@@ -1,4 +1,5 @@
 import MySwiperComponent from "@/app/_components/Component inside sections/imagesLogic";
+import Link from "next/link";
 export default function Hero() {
   return (
           <div className="home_content container">
@@ -14,9 +15,11 @@ export default function Hero() {
                       بأنظمة محاسبية ألية.
                       
                       </p>
-                    <button className="gold_button btn" type="button">
-                      سجل الأن <i className="fa-solid fa-angle-right"></i> 
-                    </button>
+                    <Link href={"/register"}>
+                      <button className="gold_button btn" type="button">
+                        سجل الأن <i className="fa-solid fa-angle-right"></i> 
+                      </button>
+                    </Link>
                 </div>
 
               </div>

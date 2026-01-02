@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 export default function NavBar() {
 
     return(
@@ -34,9 +35,11 @@ export default function NavBar() {
                 
                 
                         <form className="d-flex nav_form" >
-                            <button type="button" className="btn btn-primary gold_button">
-                                <i className="fa-solid fa-user"></i> تسجيل دخول 
-                            </button>
+                            <Link href={"/register"}>
+                                <button type="button" className="btn btn-primary gold_button">
+                                    <i className="fa-solid fa-user"></i> تسجيل دخول 
+                                </button>
+                            </Link>
                         </form>
                 
                 </div>
